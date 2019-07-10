@@ -1,0 +1,11 @@
+.alerts, .alerts > span {
+  position: fixed;
+  z-index: 999;
+  bottom: 50px;
+  left: 50px;
+
+  display: inline-flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}

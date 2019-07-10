@@ -1,0 +1,20 @@
+.tree-loader {
+  position: absolute;
+  z-index: 999;
+  bottom: calc(var(--unit) * 4);
+  left: calc(var(--unit) * 4);
+
+  padding: calc(var(--unit) * 2);
+
+  border-radius: var(--border-radius);
+  background-color: var(--dark);
+
+  white-space: nowrap;
+}
+
+.tree-loader .loader {
+  margin-right: calc(var(--unit) * 2);
+  padding: 0;
+
+  background-color: transparent;
+}

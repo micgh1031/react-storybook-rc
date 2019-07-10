@@ -1,0 +1,24 @@
+.forest-team-member {
+  margin-bottom: calc(var(--unit) * 4);
+}
+
+.forest-team-member__header {
+  margin-bottom: var(--unit);
+}
+
+.forest-team-member__image {
+  width: calc(var(--unit) * 7);
+  height: calc(var(--unit) * 7);
+  margin-right: calc(var(--unit) * 2);
+
+  border-radius: 100%;
+  background-color: var(--very-light);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.forest-team-member__bio {
+  margin-left: calc(var(--unit) * 7);
+  padding-left: calc(var(--unit) * 2);
+}

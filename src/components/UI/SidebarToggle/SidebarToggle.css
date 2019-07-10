@@ -1,0 +1,7 @@
+.sidebar-toggle {
+  display: none;
+}
+
+.is-open .sidebar-toggle {
+  display: flex;
+}

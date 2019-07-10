@@ -1,0 +1,24 @@
+.forest-species {
+  display: inline-block;
+  margin-right: calc(var(--unit) * 2);
+  margin-bottom: calc(var(--unit) * 2);
+}
+
+.forest-species__item {
+  display: inline-flex;
+
+  white-space: nowrap;
+}
+
+.forest-species__image {
+  width: calc(var(--unit) * 6);
+  height: calc(var(--unit) * 6);
+  margin-right: calc(var(--unit) * 2);
+
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  flex-shrink: 0;
+}

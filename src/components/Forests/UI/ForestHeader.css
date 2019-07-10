@@ -1,0 +1,16 @@
+.forest-detail-header {
+  margin-bottom: calc(var(--unit) * 5);
+}
+
+.forest-detail-header__name {
+  margin-bottom: var(--unit);
+}
+
+@media screen and (max-width: 768px) {
+
+  .forest-detail-header__name {
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+
+}

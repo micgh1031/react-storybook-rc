@@ -1,0 +1,16 @@
+.l-content {
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.l-inner--default {
+  /* Nothing here on purpose. */
+  /* It's is a default state */
+}
+
+.l-inner--full {
+  display: flex;
+
+  height: calc(100vh - var(--topbar-height));
+}

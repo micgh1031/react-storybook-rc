@@ -1,0 +1,59 @@
+.photo-input {
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.photo-input__photo {
+  width: calc(var(--unit) * 8);
+  height: calc(var(--unit) * 8);
+
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.photo-input__label {
+  display: flex;
+  flex-direction: column;
+
+  padding: calc(var(--unit) * 2);
+
+  cursor: pointer;
+
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.photo-input__field {
+  position: absolute;
+  z-index: -1;
+
+  overflow: hidden;
+
+  width: 0.1px;
+  height: 0.1px;
+
+  opacity: 0;
+}
+
+.photo-input__text {
+  font-size: calc(var(--unit) * 2.25);
+  line-height: calc(var(--unit) * 3.25);
+}
+
+.progress {
+  width: 100%;
+  height: var(--unit);
+  background-color: var(--very-light);
+  border-radius: var(--unit);
+  overflow: hidden;
+}
+
+.progress__bar {
+  height: 100%;
+  background-color: var(--green);
+  border-radius: var(--unit);
+}

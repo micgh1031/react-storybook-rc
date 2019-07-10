@@ -1,0 +1,31 @@
+.full-error-fetching {
+  padding: calc(var(--unit) * 2);
+}
+
+.full-error-fetching__wrapper {
+  border-radius: var(--border-radius);
+}
+
+.full-error-fetching__inner {
+  padding: calc(var(--unit) * 5);
+
+  border-radius: var(--border-radius);
+  background-color: var(--white);
+}
+
+.full-error-fetching__title {
+  margin-bottom: calc(var(--unit) * 2);
+}
+
+.full-error-fetching__retry {
+  margin-top: calc(var(--unit) * 3);
+
+  opacity: 0.8;
+
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.full-error-fetching__retry:hover {
+  opacity: 1;
+}

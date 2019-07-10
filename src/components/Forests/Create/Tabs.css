@@ -1,0 +1,42 @@
+.create-forest-tabs {
+  margin: calc(var(--unit) * 2) var(--unit);
+
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.create-forest-tabs__item {
+  display: flex;
+
+  margin: 0 var(--unit);
+  padding: calc(var(--unit) * 2);
+
+  border-radius: var(--border-radius);
+
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+  text-decoration: none;
+
+  justify-content: center;
+  flex-basis: 33%;
+}
+
+.create-forest-tabs__item.active,
+.create-forest-tabs__item:hover {
+  background-color: var(--almost-very-light);
+}
+
+@media screen and (max-width: 768px) {
+  .create-forest-tabs {
+    margin: var(--unit);
+    justify-content: flex-start;
+    font-size: calc(var(--unit) * 1.75);
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+
+  .create-forest-tabs__item {
+    padding: var(--unit);
+    flex-basis: 33%;
+  }
+}

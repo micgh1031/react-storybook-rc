@@ -1,0 +1,12 @@
+.l-topbar {
+  width: 100%;
+  position: fixed;
+  height: var(--topbar-height)
+}
+
+@media screen and (max-width: 768px) {
+  .l-topbar {
+    position: initial;
+    height: auto;
+  }
+}

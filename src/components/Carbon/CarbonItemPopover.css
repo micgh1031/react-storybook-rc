@@ -1,0 +1,13 @@
+.carbon-item-popover__item {
+  padding: var(--unit) calc(var(--unit) * 1.5);
+  border-radius: calc(var(--border-radius) / 2);
+  white-space: nowrap;
+
+  transition: background-color 0.2s ease,
+              opacity 0.2s ease;
+}
+
+.carbon-item-popover__item:hover {
+  background-color: rgba(0,0,0,0.1);
+  opacity: 1;
+}

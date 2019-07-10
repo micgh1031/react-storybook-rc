@@ -1,0 +1,112 @@
+.carbon-sidebar__main {
+  padding: calc(var(--unit) * 3) calc(var(--unit) * 2);
+}
+
+.carbon-sidebar__title {
+  margin: 0 var(--unit) calc(var(--unit) * 4);
+  flex-shrink: 0;
+}
+
+.carbon-sidebar__total {
+  visibility: hidden;
+}
+
+.carbon-sidebar__footer {
+  height: calc(var(--unit) * 10);
+  padding: 0 calc(var(--unit) * 3);
+
+  border-top: 1px solid rgba(0,0,0,0.05);
+  background-color: var(--white);
+}
+
+.carbon-sidebar__content .error-fetching {
+  padding: var(--unit);
+}
+
+.carbon-sidebar__search {
+  padding: var(--unit);
+
+  border-radius: var(--border-radius);
+
+  cursor: pointer;
+}
+
+.carbon-sidebar__add {
+  padding: calc(var(--unit) * 2) var(--unit);
+  display: inline-flex;
+}
+
+.carbon-sidebar__search:hover,
+.carbon-sidebar__search--active {
+  background-color: var(--almost-very-light);
+}
+
+.carbon-sidebar__dashboard-header {
+  margin: calc(var(--unit) * 3);
+  flex-shrink: 0;
+  display: none !important;
+}
+
+/*
+Forests
+*/
+
+.carbon-sidebar__divider {
+  border-top: 1px solid var(--almost-very-light);
+  border-bottom: none;
+  margin: calc(var(--unit) * 5) calc(var(--unit) * -3)
+}
+
+@media screen and (max-width: 768px) {
+  .carbon-sidebar__search {
+    display: none !important;
+  }
+
+  .carbon-sidebar__total {
+    visibility: visible;
+    position: absolute;
+    right: calc(var(--unit) * 2);
+    text-align: right;
+    top: calc(var(--unit) * 1.5);
+  }
+
+  .is-open .carbon-sidebar__total {
+    visibility: hidden;
+  }
+
+  .carbon-sidebar__bottom {
+    border-radius: calc(var(--unit) / 2);
+    padding: calc(var(--unit) * 1.2) calc(var(--unit) * 2);
+    background-color: var(--very-light);
+    margin-bottom: calc(var(--unit) * 3);
+  }
+
+  .carbon-sidebar__bottom .btn:not(:disabled) {
+    background-color: var(--orange);
+  }
+
+  .carbon-sidebar__bottom .btn:disabled {
+    background-color: var(--almost-very-light);
+  }
+
+  .carbon-sidebar__divider {
+    margin: calc(var(--unit) * 2) 0 calc(var(--unit) * 4) 0;
+  }
+
+  .carbon-sidebar__dashboard-header {
+    display: flex !important;
+  }
+
+  .carbon-sidebar__dashboard-header:after {
+    content: url("data:image/svg+xml,%3Csvg width='15' height='9' viewBox='0 0 15 9' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 3.23l5.2 5.18L14.1 7 7.5.4.9 7l1.4 1.4' fill-rule='nonzero' fill='%23304351'/%3E%3C/svg%3E");
+    position: absolute;
+    right: calc(var(--unit) * 3);
+    top: calc(var(--unit) * 3);
+    pointer-events: none;
+    opacity: 1;
+  }
+
+  .l-sidebar.is-open .carbon-sidebar__dashboard-header:after {
+    opacity: 0;
+  }
+}

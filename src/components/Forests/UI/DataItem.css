@@ -1,0 +1,15 @@
+.forest-data-item {
+  display: inline-flex !important;
+
+  margin-right: calc(var(--unit) * 3);
+}
+
+.forest-data-item__label {
+  margin-top: calc(var(--unit) / 2);
+}
+
+@media screen and (max-width: 768px) {
+  .forest-data-item:not(:last-child) {
+    margin-bottom: calc(var(--unit) * 2);
+  }
+}

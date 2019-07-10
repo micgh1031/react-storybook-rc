@@ -1,0 +1,24 @@
+.topbar-guest__item:last-child {
+  margin-left: calc(var(--unit) * 2);
+}
+
+@media screen and (max-width: 768px) {
+  .topbar__guest {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .topbar-guest__item {
+    display: inline-flex;
+    font-size: calc(var(--unit) * 2.25);
+    margin: 0 0 calc(var(--unit) * 0.5) 0;
+    padding: var(--unit);
+    border-radius: var(--unit);
+  }
+
+  .topbar-guest__item:last-child {
+    margin: 0;
+  }
+
+}

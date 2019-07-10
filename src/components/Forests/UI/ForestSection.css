@@ -1,0 +1,12 @@
+.forest-section {
+  margin-bottom: calc(var(--unit) * 6);
+  padding-bottom: calc(var(--unit) * 6);
+
+  border-bottom: 1px solid var(--almost-very-light);
+}
+
+.forest-section:last-child {
+  margin-bottom: 0;
+
+  border-bottom: 0;
+}

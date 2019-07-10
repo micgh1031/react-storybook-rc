@@ -1,0 +1,12 @@
+.form__aligner {
+  display: flex;
+
+  box-sizing: border-box;
+  width: 100%;
+  width: 100%;
+  margin: calc(var(--unit) * 1.5) var(--unit);
+
+  flex-basis: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+}

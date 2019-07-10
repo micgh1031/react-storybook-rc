@@ -1,0 +1,110 @@
+.carbon-item {
+  margin-bottom: var(--unit);
+  padding: var(--unit);
+
+  border-radius: var(--border-radius);
+  background-color: transparent;
+
+  transition: background-color 0.2s ease;
+}
+
+.carbon-item:hover {
+  background-color: var(--almost-very-light);
+}
+
+.carbon-item__text {
+  overflow: hidden;
+
+  width: 200px;
+  margin-bottom: calc(var(--unit) / 2);
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.carbon-item__carbon {
+  margin-right: calc(var(--unit) * 2);
+}
+
+.carbon-item__frequency * {
+  text-transform: capitalize;
+}
+
+.carbon-item__image {
+  width: calc(var(--unit) * 6);
+  height: calc(var(--unit) * 6);
+  margin-right: var(--unit);
+
+  border-radius: 100%;
+  background-color: var(--light);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  flex-shrink: 0;
+}
+
+.carbon-item__options {
+  position: relative;
+
+  margin-right: calc(var(--unit) / 2);
+  padding: var(--unit);
+
+  opacity: 0;
+  border-radius: var(--border-radius);
+
+  cursor: pointer;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.carbon-item__options:hover {
+  background-color: var(--light);
+}
+
+.carbon-item:hover .carbon-item__options {
+  opacity: 1;
+}
+
+.carbon-item--loading {
+  pointer-events: none;
+}
+
+.carbon-item--loading .carbon-item__text {
+  height: calc(var(--unit) * 2.5);
+  margin-bottom: calc(var(--unit) * 1);
+
+  border-radius: var(--border-radius);
+}
+
+.carbon-item--loading .carbon-item__info {
+  width: 120px;
+  height: calc(var(--unit) * 2);
+
+  border-radius: var(--border-radius);
+}
+
+.loading-bg {
+  position: relative;
+
+  background: var(--very-light);
+  background: linear-gradient(
+    to right,
+    var(--almost-very-light) 8%,
+    var(--very-light) 18%,
+    var(--almost-very-light) 33%
+    );
+  background-size: 800px 104px;
+
+  animation-name: loadingBg;
+  animation-duration: 1.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 768px) {
+  .carbon-item__options {
+    opacity: 1;
+  }
+}

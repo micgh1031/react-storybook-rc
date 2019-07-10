@@ -1,0 +1,61 @@
+.create-forest-details {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  overflow-y: auto;
+
+  width: 100%;
+  height: 100%;
+}
+
+.create-forest-details__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(0,0,0,0.85);
+}
+
+.create-forest-details__close {
+  position: absolute;
+  top: calc(var(--unit) * 3);
+  right: calc(var(--unit) * 3);
+
+  opacity: 0.8;
+
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.create-forest-details__close:hover {
+  opacity: 1;
+}
+
+.create-forest-details__inner {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+
+  width: 700px;
+  height: auto;
+  min-height: 700px;
+  margin: calc(var(--unit) * 7) auto;
+
+  border-radius: var(--border-radius);
+  background-color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+  .create-forest-details__inner {
+    width: calc(100% - 40px);
+    margin: calc(var(--unit) * 7) auto;
+    padding: calc(var(--unit) * 4) calc(var(--unit) * 2) 0 calc(var(--unit) * 2);
+  }
+}

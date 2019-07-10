@@ -1,0 +1,91 @@
+.forest-details-image {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+}
+
+.forest-details-image:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  opacity: 0;
+  border-radius: var(--border-radius);
+  background-color: var(--dark);
+
+  content: '';
+  transition: opacity 0.2s ease;
+}
+
+.forest-details-image--fetching {
+  pointer-events: none;
+}
+
+.forest-details-image--fetching:before {
+  opacity: 1;
+}
+
+.forest-details-image--fetching:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: calc(var(--unit) * 2);
+  height: calc(var(--unit) * 2);
+
+  border-top: 2px solid var(--white);
+  border-right: 2px solid rgba(0,0,0,0);
+  border-bottom: 2px solid rgba(0,0,0,0);
+  border-left: 2px solid var(--white);
+  border-radius: 50%;
+
+  content: '';
+  transform: translate(-50%, -50%);
+  animation: rotating 1.5s linear infinite;
+}
+
+.forest-details-image--fetching .forest-details-image__image {
+  opacity: 0.3;
+
+  filter: blur(10px);
+}
+
+.forest-details-image__image {
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  border-radius: var(--border-radius);
+  background-color: var(--very-light);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+.forest-details-image__icon {
+  position: absolute;
+  right: calc(var(--unit) * 2);
+  bottom: calc(var(--unit) * 2);
+
+  opacity: 0.5;
+
+  transition: opacity 0.2s ease;
+}
+
+.forest-details-image:hover .forest-details-image__icon {
+  opacity: 1;
+}

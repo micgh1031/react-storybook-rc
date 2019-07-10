@@ -1,0 +1,51 @@
+.checkout-fineprint {
+  margin-top: calc(var(--unit) * 5);
+
+  background-color: var(--very-light);
+
+  padding: calc(var(--unit) * 3);
+  border-radius: var(--border-radius);
+}
+
+.checkout-fineprint a {
+  color: var(--dark);
+  text-decoration: none;
+
+  opacity: 0.8;
+
+  transition: opacity 0.2s ease;
+}
+
+.checkout-fineprint a:hover {
+  opacity: 1;
+}
+
+.checkout-fineprint__logos {
+  margin-top: calc(var(--unit) * 3);
+
+  display: flex;
+  align-items: center;
+}
+
+.checkout-fineprint__stripe {
+  height: 34px;
+  width: auto;
+}
+
+.checkout-fineprint__card {
+  height: 35px;
+  width: auto;
+
+  margin-left: var(--unit);
+}
+
+@media screen and (max-width: 768px) {
+  .checkout-fineprint__logos {
+    flex-wrap: wrap;
+  }
+
+  .checkout-fineprint__stripe, .checkout-fineprint__card {
+    height: calc(var(--unit) * 3);
+    margin-bottom: var(--unit);
+  }
+}

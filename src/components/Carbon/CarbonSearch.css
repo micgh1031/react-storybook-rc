@@ -1,0 +1,22 @@
+.carbon-search-input {
+  margin: var(--unit);
+  margin-top: 0;
+  margin-bottom: calc(var(--unit) * 2);
+  padding: var(--unit) 0;
+
+  font-family: 'Apercu', sans-serif;
+
+  color: var(--dark);
+  border: 0;
+  border-bottom: 1px solid var(--almost-very-light);
+  outline: none;
+  background-color: transparent;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.carbon-search-input::placeholder {
+  color: var(--aluminum);
+}

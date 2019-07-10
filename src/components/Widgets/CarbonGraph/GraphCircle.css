@@ -1,0 +1,43 @@
+.carbon-graph-circle {
+  position: relative;
+
+  display: block;
+
+  margin: 10px;
+  margin: 10px;
+  padding: 10px;
+
+  opacity: 0;
+
+  cursor: pointer;
+  transform: scale(1);
+
+  stroke: var(--green);
+  fill: var(--white);
+  stroke-width: 2;
+}
+
+.carbon-graph-circle:hover,
+.carbon-graph-circle--active,
+.carbon-graph-area:hover ~ .carbon-graph-circle {
+  opacity: 1;
+}
+
+.carbon-graph-circle--marker {
+  opacity: 1;
+}
+
+.carbon-graph-area {
+  opacity: 0;
+
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+
+  fill: transparent;
+  stroke-width: 2;
+  stroke: rgba(0,0,0,0.1);
+}
+
+.carbon-graph-area--active {
+  opacity: 1;
+}

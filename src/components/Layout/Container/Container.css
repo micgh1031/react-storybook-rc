@@ -1,0 +1,25 @@
+.l-container {
+  display: flex;
+  overflow-y: auto;
+
+  width: 100%;
+
+  justify-content: space-between;
+
+  flex-direction: column;
+}
+
+.l-container--vertical-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.l-container--vertical-center .l-content {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .l-container--vertical-center {
+    justify-content: flex-start;
+  }
+}

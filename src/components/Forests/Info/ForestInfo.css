@@ -1,0 +1,9 @@
+.forest-info__graph {
+  padding: 0;
+
+  border: none;
+}
+
+.forest-info__my-data {
+  margin-top: calc(var(--unit) * 3);
+}

@@ -1,0 +1,19 @@
+.create-forest-filters {
+  flex: 1;
+
+  padding: calc(var(--unit) * 5) calc(var(--unit) * 5) var(--unit) calc(var(--unit) * 5);
+
+  flex-basis: 40%;
+}
+
+.create-forest-filters__inner {
+  border-radius: calc(var(--border-radius) * 2);
+  background-color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+  .create-forest-filters {
+    padding: 0;
+    flex-basis: 100%;
+  }
+}

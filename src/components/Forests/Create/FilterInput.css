@@ -1,0 +1,46 @@
+.create-forest-input {
+  margin: calc(var(--unit) * 4);
+  margin-top: calc(var(--unit) * 2);
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-forest-input__label {
+  margin-right: calc(var(--unit) * 2);
+
+  white-space: nowrap;
+}
+
+.create-forest-input__form {
+  align-items: center;
+}
+
+.create-forest-input__input {
+  width: calc(var(--unit) * 15);
+  margin-right: var(--unit);
+  padding: var(--unit) calc(var(--unit) * 2);
+
+  font-family: 'Apercu', sans-serif;
+
+  border: 0;
+  border-radius: var(--border-radius);
+  outline: 0;
+  background-color: var(--very-light);
+  box-shadow: none;
+
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.create-forest-input__input:focus {
+  outline: 0px solid transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .create-forest-input {
+    margin: calc(var(--unit) * 2);
+    margin-top: calc(var(--unit) * 4);
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,19 @@
+.create-forest-list {
+  padding: calc(var(--unit) * 5);
+  padding-left: 0;
+
+  flex-basis: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .create-forest-list {
+    padding: calc(var(--unit) * 3) calc(var(--unit) * 2);
+
+    flex-basis: 100%;
+  }
+
+  .create-forest__title {
+    margin: 0 0 calc(var(--unit) * 4) 0;
+    flex-shrink: 0;
+  }
+}

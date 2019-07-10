@@ -1,0 +1,49 @@
+.checkout-billing-form {
+  padding-top: calc(var(--unit) * 3);
+  padding-bottom: calc(var(--unit) * 3);
+
+  border-bottom: 1px solid var(--almost-very-light);
+}
+
+.checkout-billing-form__form-wrapper {
+  overflow: hidden;
+
+  transition: max-height cubic-bezier(.19, 1, .22, 1) 0.75s;
+}
+
+.checkout-billing-form__header {
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-billing-form__header a {
+  opacity: 0.8;
+
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.checkout-billing-form__header a:hover {
+  opacity: 1;
+}
+
+.checkout-billing-form__edit {
+  opacity: 0.8;
+
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.checkout-billing-form__edit:hover {
+  opacity: 1;
+}
+
+.checkout-billing-form__password {
+  margin-top: var(--unit);
+}
+
+.checkout-billing-form__password-title {
+  margin-bottom: var(--unit);
+}

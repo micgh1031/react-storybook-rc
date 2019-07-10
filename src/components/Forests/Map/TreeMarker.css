@@ -1,0 +1,8 @@
+.my-forest-tree-marker {
+  box-sizing: content-box;
+  width: 22px;
+  height: 26px;
+  padding: var(--unit);
+
+  cursor: help;
+}

@@ -1,0 +1,20 @@
+.forest-geo-info__species-list {
+  columns: 2;
+}
+
+.forest-geo-info__data {
+  margin-top: calc(var(--unit) * 3);
+}
+
+.forest-geo-info__image {
+  height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .forest-geo-info__species-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

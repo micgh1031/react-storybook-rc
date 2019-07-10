@@ -1,0 +1,7 @@
+.empty-carbon {
+  padding: var(--unit);
+}
+
+.empty-carbon__text {
+  margin-top: calc(var(--unit) * 2);
+}

@@ -1,0 +1,69 @@
+.balance {
+  width: 100%;
+
+  height: calc(var(--unit) * 3);
+  position: relative;
+}
+
+.carbon-balance--tiny .balance {
+  height: var(--unit);
+}
+
+.balance__wrapper {
+  overflow: hidden;
+  border-radius: calc(var(--unit) * 1.5);
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+}
+
+.balance__balance {
+  transition: width 0.2s ease;
+}
+
+.balance__captured {
+  background-color: var(--green);
+  margin-right: calc(var(--unit) / 8);
+}
+
+.carbon-balance--tiny .balance__captured {
+  background-color: white;
+}
+
+.balance__emitted {
+  background-color: var(--orange);
+  margin-left: calc(var(--unit) / 8);
+}
+
+.carbon-balance--tiny .balance__emitted {
+  background-color: white;
+  opacity: 0.4;
+}
+
+.balance__center {
+  position: absolute;
+  height: calc(var(--unit) * 5);
+  top: calc(var(--unit) * -1);
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: calc(var(--unit) / 4);
+  border-radius: var(--unit);
+
+  background-color: var(--white);
+}
+
+.carbon-balance--tiny .balance__center {
+  height: calc(var(--unit) * 3);
+  top: calc(var(--unit) * -0.9);
+}
+
+.balance__smile {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  top: calc(var(--unit) * -3);
+}

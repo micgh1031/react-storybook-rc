@@ -1,0 +1,56 @@
+.create-forest {
+  background-color: var(--very-light);
+}
+
+.create-forest__filters {
+  flex-basis: 80%;
+}
+
+.create-forest-dashboard {
+  flex: 1;
+
+  padding: 0 calc(var(--unit) * 5) calc(var(--unit) * 2) calc(var(--unit) * 5);
+
+  flex-basis: 40%;
+}
+
+.create-forest-dashboard__inner {
+  border-radius: calc(var(--border-radius) * 2);
+}
+
+@media screen and (max-width: 768px) {
+  .create-forest {
+    background-color: white;
+    /*Because of safari on mobile resolutions*/
+    display: block;
+  }
+
+  /*Because of safari on mobile resolutions*/
+  .create-forest-item.react-layout-components--box {
+    display: block;
+    position: relative;
+  }
+
+  .create-forest__filters {
+    flex-basis: 100%;
+  }
+
+  .create-forest-dashboard {
+    padding: calc(var(--unit) * 4) calc(var(--unit) * 2);
+
+    flex-basis: 100%;
+  }
+
+  .create-forest__sidebar-button {
+    position: absolute;
+    top: calc(var(--unit) * 1.5);
+    right: calc(var(--unit) * 1.5);
+    transition: opacity 150ms ease-in;
+    opacity: 1;
+  }
+
+  .l-sidebar.is-open .create-forest__sidebar-button {
+    pointer-events: none;
+    opacity: 0;
+  }
+}

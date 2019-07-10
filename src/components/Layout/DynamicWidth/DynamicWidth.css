@@ -1,0 +1,10 @@
+.l-dynamic-width {
+  display: flex;
+
+  width: 100%;
+
+  transition: all 0.2s ease;
+  transform: translate3d(0px, 0px, 0px);
+
+  will-change: width;
+}

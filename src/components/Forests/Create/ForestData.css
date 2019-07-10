@@ -1,0 +1,11 @@
+.forest-checkout-data {
+  width: 100%;
+}
+
+.forest-checkout-data__item {
+  margin-right: calc(var(--unit) * 2);
+
+  white-space: nowrap;
+
+  flex-basis: 33%;
+}

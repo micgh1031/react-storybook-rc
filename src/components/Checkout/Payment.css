@@ -1,0 +1,14 @@
+.checkout-payment-form {
+  padding-top: calc(var(--unit) * 3);
+  padding-bottom: calc(var(--unit) * 3);
+}
+
+.checkout-payment-form__form-wrapper {
+  overflow: hidden;
+
+  transition: max-height cubic-bezier(.19, 1, .22, 1) 0.75s;
+}
+
+.checkout-payment-form__header {
+  margin-bottom: var(--unit);
+}

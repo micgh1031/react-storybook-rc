@@ -1,0 +1,14 @@
+.auth-header {
+  width: 100%;
+  margin: 0 auto;
+
+  flex-shrink: 0;
+}
+
+.auth-header__title {
+  margin-bottom: calc(var(--unit) * 2);
+}
+
+.auth-header__text {
+  margin-bottom: calc(var(--unit) * 5);
+}

@@ -1,0 +1,92 @@
+.topbar-user {
+  position: relative;
+
+  user-select: none;
+}
+
+.topbar-user__dropdown-holder .ui-popover {
+  left: inherit;
+  transform: none;
+  right: calc(var(--unit) * -1.5);
+}
+
+.topbar-user:focus {
+  outline: none;
+}
+
+.topbar-user__name-photo {
+  display: flex;
+
+  color: var(--dark);
+
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+
+  align-items: center;
+}
+
+.topbar-user__photo {
+  width: calc(var(--unit) * 4);
+  height: calc(var(--unit) * 4);
+  margin-left: var(--unit);
+
+  border-radius: 100%;
+  background-color: var(--very-light);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.topbar-user:hover > .topbar-user__name-photo,
+.topbar-user:focus > .topbar-user__name-photo {
+  opacity: 0.8;
+}
+
+/* Detect on click events outside the popover */
+.topbar-user__dropdown-handler {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: transparent;
+
+  content: '';
+}
+
+/* Little hack to position the .ui-popover arrow */
+.topbar-user .ui-popover__arrow {
+  right: calc(var(--unit) * 2);
+  left: auto;
+
+  transform: translateX(0);
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .topbar__user {
+    align-self: flex-start;
+  }
+
+  .topbar-user__dropdown-holder {
+    display: none;
+  }
+
+
+  .topbar-user__name-photo {
+    font-size: calc(var(--unit) * 2.25);
+    flex-direction: row-reverse;
+    align-self: flex-start;
+  }
+
+  .topbar-user__photo {
+    width: calc(var(--unit) * 4.25);
+    height: calc(var(--unit) * 4.25);
+    margin-left: calc(var(--unit) * -4.25);
+    position: relative;
+    top: calc(var(--unit) * -0.5);
+  }
+
+}

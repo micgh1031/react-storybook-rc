@@ -1,0 +1,21 @@
+.cover-image {
+  padding: calc(var(--unit) * 2);
+}
+
+.cover-image__image {
+  box-sizing: border-box;
+  width: 100%;
+
+  border-radius: calc(var(--border-radius) * 2);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .cover-image {
+    display: none;
+  }
+}

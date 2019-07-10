@@ -1,0 +1,26 @@
+.changelog {
+  display: flex;
+
+  width: 100%;
+  padding: var(--unit) calc(var(--unit) * 2);
+
+  font-size: 12px;
+  line-height: 1;
+
+  color: white;
+  background-color: var(--dark);
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.changelog__link {
+  color: white;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .changelog {
+    display: none;
+  }
+}

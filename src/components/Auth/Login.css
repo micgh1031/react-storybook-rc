@@ -1,0 +1,5 @@
+.login-sidebar, .signup-sidebar, .recovery-sidebar {
+  padding: calc(var(--unit) * 6) calc(var(--unit) * 2);
+  max-width: calc(var(--unit) * 70);
+  margin: auto;
+}

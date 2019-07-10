@@ -1,0 +1,20 @@
+.l-wrapper {
+  display: flex;
+  flex: 1;
+
+  width: 100%;
+
+  justify-content: space-between;
+
+  padding-top: var(--topbar-height);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .l-wrapper {
+    overflow-y: scroll;
+    padding-top: 0;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}

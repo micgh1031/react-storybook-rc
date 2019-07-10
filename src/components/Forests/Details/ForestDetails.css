@@ -1,0 +1,29 @@
+.forest-details {
+  width: 100%;
+}
+
+.forest-details__content {
+  width: 100%;
+  max-width: 550px;
+  margin: calc(var(--unit) * 7);
+}
+
+.forest-details__tabs {
+  margin-bottom: calc(var(--unit) * 5);
+}
+
+.forest-sidebar__main {
+  padding: calc(var(--unit) * 3) calc(var(--unit) * 2);
+}
+
+.forest-sidebar__title {
+  margin: 0 0 calc(var(--unit) * 4) 0;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .forest-details__content {
+    max-width: none;
+    margin: 0;
+  }
+}

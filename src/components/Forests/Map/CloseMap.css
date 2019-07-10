@@ -1,0 +1,15 @@
+.close-reforestum-map {
+  position: absolute;
+  z-index: 4;
+  top: calc(var(--unit) * 3);
+  left: calc(var(--unit) * 3);
+
+  opacity: 0.8;
+
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.close-reforestum-map:hover {
+  opacity: 1;
+}

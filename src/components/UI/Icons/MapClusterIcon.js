@@ -1,0 +1,7 @@
+import React from 'react';
+
+const MapClusterIcon = props => (
+  <svg {...props} xmlns="http://www.w3.org/2000/svg" width="18" height="18" xmlnsXlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M0 0h18v18H0z"/><ellipse id="c" cx="9.002" cy="4.5" rx="5.002" ry="4.5"/><ellipse id="d" cx="5.002" cy="4.5" rx="5.002" ry="4.5"/><ellipse id="e" cx="5.002" cy="4.5" rx="5.002" ry="4.5"/></defs><g fill="none" fillRule="evenodd"><mask id="b" fill="#fff"><use xlinkHref="#a"/></mask><g mask="url(#b)"><path fill="#B67D27" d="M4.302 6.044C4.107 5.562 4 5.042 4 4.5 4 2.015 6.24 0 9.002 0c2.763 0 5.003 2.015 5.003 4.5 0 .198-.015.392-.042.583 2.303.403 4.042 2.227 4.042 4.417 0 2.215-1.78 4.056-4.122 4.43.126.907.188 1.93.188 3.07h-2.14c0-1.18.054-2.205.165-3.074-1.045-.172-1.976-.636-2.686-1.295-.712 1.19-2 2.056-3.527 2.3.126.907.188 1.93.188 3.07H3.93c0-1.18.054-2.205.165-3.074C1.765 14.542 0 12.706 0 10.5c0-2.272 1.87-4.15 4.302-4.456z"/><use fill="#49D690" xlinkHref="#c"/><ellipse cx="9.002" cy="4.5" stroke="#2CA86A" strokeWidth="1.5" rx="4.252" ry="3.75"/></g><g transform="translate(8 5)" mask="url(#b)"><use fill="#49D690" xlinkHref="#d"/><ellipse cx="5.002" cy="4.5" stroke="#2CA86A" strokeWidth="1.5" rx="4.252" ry="3.75"/></g><g transform="translate(0 6)" mask="url(#b)"><use fill="#49D690" xlinkHref="#e"/><ellipse cx="5.002" cy="4.5" stroke="#2CA86A" strokeWidth="1.5" rx="4.252" ry="3.75"/></g></g></svg>
+);
+
+export default MapClusterIcon;

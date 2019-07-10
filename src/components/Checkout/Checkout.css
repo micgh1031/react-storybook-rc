@@ -1,0 +1,21 @@
+.checkout-container {
+  width: 540px;
+  margin: calc(var(--unit) * 8) auto;
+}
+
+.checkout-container__text {
+  margin-bottom: calc(var(--unit) * 5);
+}
+
+.checkout-container__image {
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .checkout-container {
+    width: 100%;
+    margin: 0;
+    padding: calc(var(--unit) * 2);
+  }
+}

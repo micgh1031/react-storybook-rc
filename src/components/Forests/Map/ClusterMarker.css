@@ -1,0 +1,44 @@
+.map-tree-cluster {
+  position: relative;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+}
+
+.map-tree-cluster:hover .map-tree-cluster__number {
+  color: var(--dark);
+}
+
+.map-tree-cluster__number {
+  position: relative;
+  z-index: 0;
+  top: 0;
+  right: 0;
+
+  display: inline-block;
+
+  padding: calc(var(--unit) / 2) var(--unit);
+
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 12px;
+
+  color: var(--iron);
+  border: 0px solid var(--light);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+
+  transform: translate(50% , -50%);
+  text-align: center;
+}
+
+.map-tree-cluster__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 26px;
+  height: 28px;
+}

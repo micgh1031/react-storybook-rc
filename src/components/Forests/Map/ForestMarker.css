@@ -1,0 +1,30 @@
+.my-forest-tooltip {
+  z-index: 9999999999;
+
+  padding: calc(var(--unit) * 0.8);
+
+  border-radius: var(--border-radius);
+
+  cursor: pointer;
+}
+
+.my-forest-tooltip__cluster {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.my-forest-tooltip__cluster:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.my-forest-tooltip__name {
+  white-space: nowrap;
+}
+
+.my-forest-tooltip__metadata {
+  margin-top: calc(var(--unit) * 0.8);
+}
+
+.my-forest-tooltip__surface {
+  margin-right: calc(var(--unit) * 1.5);
+}

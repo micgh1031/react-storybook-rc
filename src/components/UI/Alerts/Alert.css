@@ -1,0 +1,158 @@
+.alert {
+  display: inline-flex;
+
+  max-width: 400px;
+  margin-top: 20px;
+  padding: calc(var(--unit) * 2);
+
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5em;
+
+  color: white;
+  border: 1px solid rgba(black, 0.2);
+  border-radius: var(--border-radius);
+
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: content-box;
+}
+
+.alert:first-child {
+  margin-top: 0;
+}
+
+.alert__content {
+  display: flex;
+
+  align-items: center;
+}
+
+.alert__label {
+  margin-right: 10px;
+  padding: 4px var(--unit);
+
+  border-radius: var(--border-radius);
+}
+
+.alert__action {
+  display: inline-flex;
+
+  margin-left: 10px;
+
+  opacity: 0.8;
+
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.alert__action:hover {
+  opacity: 1;
+}
+
+.alert__close {
+  display: flex;
+
+  width: 20px;
+  height: 20px;
+  margin-left: calc(var(--unit) * 2);
+
+  font-size: 20px;
+  line-height: 20px;
+
+  border-radius: var(--border-radius);
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert__close:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Color specifics */
+
+.alert--info {
+  background-color: var(--blue);
+}
+
+.alert--info .alert__label {
+  background-color: var(--dark-blue);
+}
+
+.alert--success {
+  background-color: var(--green);
+}
+
+.alert--success .alert__label {
+  background-color: var(--dark-green);
+}
+
+.alert--warning {
+  background-color: var(--orange);
+}
+
+.alert--warning .alert__label {
+  background-color: var(--dark-orange);
+}
+
+.alert--error {
+  background-color: var(--red);
+}
+
+.alert--error .alert__label {
+  background-color: var(--dark-red);
+}
+
+/* Transitions */
+
+.alert-animation--enter {
+  margin-left: -20px;
+
+  opacity: 0.01;
+}
+
+.alert-animation--enter.alert-animation--enter-active {
+  margin-left: 0;
+
+  opacity: 1;
+
+  transition: all 300ms ease;
+}
+
+.alert-animation--exit {
+  margin-left: 0;
+
+  opacity: 1;
+}
+
+.alert-animation--exit.alert-animation--exit-active {
+  margin-left: -20px;
+
+  opacity: 0.01;
+
+  transition: all 200ms ease;
+}
+
+@media (max-width: 475px) {
+  .alert__content {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .alert__label {
+    margin-right: 0;
+    margin-bottom: var(--unit);
+  }
+
+  .alert__action {
+    margin-top: var(--unit);
+    margin-left: 0;
+  }
+}

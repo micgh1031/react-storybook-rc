@@ -1,0 +1,28 @@
+.form-feedback-message {
+  display: flex;
+
+  margin: calc(var(--unit) * 1.5) var(--unit);
+
+  align-items: center;
+}
+
+.form-feedback-message__label {
+  display: inline-flex;
+
+  margin-right: var(--unit);
+  padding: 0.3em 0.35em;
+
+  border-radius: var(--border-radius);
+  background-color: var(--dark);
+
+  align-items: center;
+  justify-content: center;
+}
+
+.form-feedback-message__label--error {
+  background-color: var(--dark-red);
+}
+
+.form-feedback-message__label--success {
+  background-color: var(--dark-green);
+}

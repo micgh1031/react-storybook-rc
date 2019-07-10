@@ -1,0 +1,135 @@
+.create-forest-sources {
+  overflow-y: auto;
+
+  max-height: calc(100vh - 485px);
+  margin: calc(var(--unit) * 2);
+
+  user-select: none;
+}
+
+.create-forest-sources__item {
+  margin-bottom: var(--unit);
+  padding: calc(var(--unit) * 2);
+
+  opacity: 0.8;
+  border-radius: var(--border-radius);
+
+  cursor: pointer;
+  transition: opacity 0.2s ease,
+              background-color 0.2s ease;
+
+  align-items: center;
+}
+
+.create-forest-sources__checkbox {
+  flex-shrink: 0;
+  width: calc(var(--unit) * 2.5);
+  height: calc(var(--unit) * 2.5);
+  background-color: var(--light);
+  border-radius: calc(var(--unit) / 2);
+  margin-right: calc(var(--unit) * 2);
+  position: relative;
+}
+
+.create-forest-sources__checkbox:after {
+  transition: opacity 0.1s ease;
+  position: absolute;
+  left: calc(var(--unit) / 2);
+  top: calc(var(--unit) / 4);
+  opacity: 0;
+  content: url("data:image/svg+xml,%3Csvg width='13' height='11' viewBox='0 0 13 11' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.53 5.803L.47 6.863l3.553 3.554 8.196-8.91L11.114.493 3.977 8.25' fill-rule='nonzero' fill='%23202429'/%3E%3C/svg%3E");
+}
+
+.create-forest-sources__input:checked +
+.create-forest-sources__item .create-forest-sources__checkbox:after {
+  opacity: 1;
+}
+
+.create-forest-sources__label:last-child .create-forest-sources__item {
+  margin-bottom: 0;
+}
+
+.create-forest-sources__info {
+  width: 100%;
+
+  justify-content: space-between;
+}
+
+.create-forest-sources__data {
+  margin-right: calc(var(--unit) * 2);
+
+  white-space: nowrap;
+}
+
+.create-forest-sources__data > * {
+  margin-bottom: calc(var(--unit) / 2);
+}
+
+.create-forest-sources__data:last-child {
+  margin-right: 0;
+}
+
+.create-forest-sources__text {
+  display: inline;
+  overflow: hidden;
+
+  max-width: 200px;
+
+  text-overflow: ellipsis;
+}
+
+.create-forest-sources__input:checked +
+.create-forest-sources__item,
+.create-forest-sources__item:hover {
+  background-color: var(--almost-very-light);
+}
+
+.create-forest-sources__input:checked +
+.create-forest-sources__item {
+  opacity: 1;
+}
+
+.create-forest-sources__image {
+  width: calc(var(--unit) * 6);
+  height: calc(var(--unit) * 6);
+  margin-right: calc(var(--unit) * 2);
+
+  border-radius: 100%;
+  background-color: var(--very-light);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  flex-shrink: 0;
+}
+
+.create-forest-sources__bottom {
+  padding: calc(var(--unit) * 2);
+}
+
+@media screen and (max-width: 768px) {
+  .create-forest-sources {
+    margin: calc(var(--unit) * 1.5);
+  }
+
+  .create-forest-sources__item {
+    padding: var(--unit);
+    font-size: calc(var(--unit) * 1.75);
+  }
+
+  .create-forest-sources__image {
+    width: calc(var(--unit) * 5);
+    height: calc(var(--unit) * 5);
+    margin-right: var(--unit);
+    align-self: flex-start;
+  }
+
+  .create-forest-sources__bottom {
+    padding: var(--unit);
+  }
+
+  .create-forest-sources__checkbox {
+    margin-right: calc(var(--unit) * 1.5);
+  }
+
+}

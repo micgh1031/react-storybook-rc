@@ -1,0 +1,176 @@
+/* Main Text style */
+.t-main {
+  font-family: 'Apercu', sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5em;
+
+  color: var(--dark);
+
+  letter-spacing: 0px;
+}
+
+/* Other sizes */
+.t-huge {
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 1.1666em;
+
+  letter-spacing: -0.025em;
+}
+
+.t-huge input,
+.t-huge select {
+  font-weight: normal;
+
+  letter-spacing: -0.025em;
+}
+
+.t-heading {
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 1.285em;
+}
+
+.t-heading input,
+.t-heading select {
+  font-weight: normal;
+}
+
+.t-heading-small {
+  font-size: 1.25em;
+  line-height: 1.6em;
+}
+
+.t-small {
+  font-size: 0.875em;
+  line-height: 1.28em;
+}
+
+.t-tiny {
+  font-size: 0.75em;
+  font-weight: bold;
+  line-height: 1.25em;
+}
+
+.t-tiny input,
+.t-tiny select {
+  font-weight: bold;
+}
+
+.t-uppercase {
+  font-size: 0.625em;
+  font-weight: bold;
+  line-height: 1.6em;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.t-uppercase input,
+.t-uppercase select {
+  font-weight: bold;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* With icon */
+.t-icon,
+.t-icon-link {
+  display: flex;
+
+  align-items: center;
+}
+
+.t-icon > *:first-child,
+.t-icon-link > *:first-child {
+  margin-right: var(--unit);
+}
+
+.t-icon > *:last-child,
+.t-icon-link > *:last-child {
+  font-weight: normal;
+}
+
+/* Link Icon */
+.t-icon-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.t-icon-link > *:last-child {
+  transition: color 0.2s ease,
+              opacity 0.2s ease;
+}
+
+.t-icon-link:hover > *:last-child[class*="--green"] {
+  color: var(--dark-green);
+}
+
+.t-icon-link:hover > *:last-child[class*="--orange"] {
+  color: var(--dark-orange);
+}
+
+.t-icon-link:hover > *:last-child[class*="--red"] {
+  color: var(--dark-red);
+}
+
+.t-icon-link:hover > *:last-child[class*="--light"] {
+  color: var(--iron);
+}
+
+.t-icon-link:hover > *:last-child[class*="--dark"] {
+  color: var(--black);
+}
+
+.t-icon-link:hover > *:last-child[class*="--white"] {
+  opacity: 0.5;
+}
+
+.t-icon-link:hover > *:last-child[class*="--50"],
+.t-icon-link:hover > *:last-child[class*="--75"] {
+  opacity: 1;
+}
+
+/* Global modifiers */
+.t-main--dark {
+  color: var(--dark);
+}
+
+.t-main--light {
+  color: var(--grey);
+}
+
+.t-main--green {
+  color: var(--green);
+}
+
+.t-main--orange {
+  color: var(--orange);
+}
+
+.t-main--red {
+  color: var(--red);
+}
+
+.t-main--white {
+  color: var(--white);
+}
+
+.t-main--75 {
+  opacity: 0.75;
+  color: var(--white);
+}
+
+.t-main--50 {
+  opacity: 0.50;
+  color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+  .l-sidebar .t-heading-small {
+    font-size: 1em;
+    line-height: 1em;
+  }
+}

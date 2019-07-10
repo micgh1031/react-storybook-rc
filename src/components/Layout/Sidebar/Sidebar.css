@@ -1,0 +1,51 @@
+.l-sidebar {
+  z-index: 9;
+
+  width: var(--sidebar-width);
+
+  background-color: var(--very-light);
+  box-shadow: -1px 0px 0px 0px rgba(0,0,0,0.05),
+              -1px 0px 0px 0px var(--white);
+
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .l-sidebar {
+    transition: 500ms cubic-bezier(.19, 1, .22, 1);
+    position: fixed;
+    top: var(--unit);
+    left: var(--unit);
+    right: 0;
+
+    height: 100%;
+    /*this rule is repeated because of safari inability to parse nested calcs*/
+    width: calc(100% - 16px);
+    width: calc(100% - calc(var(--unit) * 2));
+
+    border-radius: var(--unit) var(--unit) 0 0;
+    background-color: white;
+    box-shadow: 0 -1px 4px 0 rgba(0,0,0,0.04),
+      0 -2px 8px 0 rgba(48,67,81,0.08);
+
+    /*this rule is repeated because of safari inability to parse nested calcs*/
+    transform: translateY(calc(100% - 72px));
+    transform: translateY(calc(100% - calc(var(--unit) * 9)));
+    overflow: hidden;
+    justify-content: flex-start;
+  }
+
+  .l-sidebar.is-open {
+    transform: translateY(0);
+    overflow: auto;
+  }
+
+  .l-sidebar:not(.is-open) .l-content {
+    overflow-y: hidden;
+  }
+
+  .l-sidebar.is-hidden {
+    opacity: 0 !important;
+    pointer-events: none;
+  }
+}

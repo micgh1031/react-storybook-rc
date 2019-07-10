@@ -1,0 +1,20 @@
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.not-found__inner {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.not-found__inner-text {
+  margin-top: var(--unit);
+  margin-bottom: calc(var(--unit) * 3);
+}

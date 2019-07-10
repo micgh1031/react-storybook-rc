@@ -1,0 +1,29 @@
+.carbon-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.carbon-header__main {
+  margin-top: calc(var(--unit) * 4);
+  margin-bottom: var(--unit);
+}
+
+.carbon-balance--tiny .carbon-header__main {
+  margin-top: var(--unit);
+  margin-bottom: 0;
+  font-size: calc(var(--unit) * 2);
+}
+
+.carbon-balance--tiny .carbon-header__title {
+  font-size: calc(var(--unit) * 1.5);
+  opacity: 0.6;
+}
+
+.carbon-balance--tiny .carbon-header__title {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.carbon-balance--tiny .carbon-header__subtitle {
+  display: none;
+}

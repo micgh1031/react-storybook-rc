@@ -1,0 +1,82 @@
+.t-token {
+  display: flex;
+
+  align-items: center;
+}
+
+.t-token *:first-child {
+  margin-right: calc(var(--unit) / 2);
+}
+
+.t-token__content {
+  display: inline-flex;
+
+  padding: 0.3em 0.35em;
+
+  font-family: 'Apercu', sans-serif;
+  font-size: 0.625em;
+  font-weight: bold;
+  line-height: 1em;
+
+  color: white;
+  border-radius: var(--border-radius);
+
+  align-items: center;
+  justify-content: center;
+}
+
+/* Visibility */
+.t-token--hidden.t-token--big .t-token__content {
+  display: none;
+}
+
+/* Size */
+.t-token--big .t-token__content {
+  padding: 0.4em 0.5em;
+
+  font-size: 0.75em;
+}
+
+/* Colors */
+.t-token--dark .t-token__content {
+  background-color: var(--dark);
+}
+
+.t-token--light .t-token__content {
+  background-color: var(--grey);
+}
+
+.t-token--green .t-token__content {
+  background-color: var(--green);
+}
+
+.t-token--orange .t-token__content {
+  background-color: var(--orange);
+}
+
+.t-token--red .t-token__content {
+  background-color: var(--red);
+}
+
+.t-token--white .t-token__content {
+  color: var(--dark);
+  background-color: var(--white);
+}
+
+.t-token--75 .t-token__content {
+  opacity: 0.75;
+  color: var(--dark);
+  background-color: var(--white);
+}
+
+.t-token--50 .t-token__content {
+  opacity: 0.50;
+  color: var(--dark);
+  background-color: var(--white);
+}
+
+.react-tabs--carbon .react-tabs__tab:not(.react-tabs__tab--selected) .t-token__content {
+  background-color: transparent;
+  border: 1px solid var(--grey);
+  color: var(--grey);
+}

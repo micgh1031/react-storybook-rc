@@ -1,0 +1,49 @@
+.carbon-graph {
+  width: 100%;
+  padding: calc(var(--unit) * 4);
+
+  border: 1px solid var(--light);
+  border-radius: calc(var(--border-radius) * 2);
+}
+
+.carbon-graph__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.carbon-graph__header-amount {
+  margin-top: calc(var(--unit) * 4);
+  margin-bottom: var(--unit);
+}
+
+.carbon-graph__graph {
+  width: 100%;
+  height: 200px;
+  margin-top: calc(var(--unit) * 3);
+  margin-bottom: calc(var(--unit) * 3);
+}
+
+.carbon-graph__graph svg,
+.carbon-graph__graph .recharts-surface {
+  overflow: visible !important;
+}
+
+.carbon-graph__line path {
+  stroke: var(--green);
+  stroke-width: 2;
+  stroke-dasharray: 4, 8;
+}
+
+.carbon-graph__footer {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.carbon-graph__footer-item:last-child {
+  text-align: right;
+}
+
+.recharts-line-chart-dot * {
+  display: none;
+}

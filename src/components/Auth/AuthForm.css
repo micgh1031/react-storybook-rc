@@ -1,0 +1,11 @@
+.auth-form {
+  width: 100%;
+}
+
+.auth-form form {
+  width: 100%;
+}
+
+.auth-form .auth-form__input--half {
+  width: calc(50% - calc(var(--unit) * 1.5));
+}

@@ -1,0 +1,31 @@
+.forest-item {
+  margin-bottom: var(--unit);
+  padding: var(--unit);
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+.carbon-item__text {
+  overflow: hidden;
+  width: 200px;
+  margin-bottom: calc(var(--unit) / 2);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.carbon-item__carbon {
+  margin-right: calc(var(--unit) * 2);
+}
+
+.forest-item__image {
+  width: calc(var(--unit) * 6);
+  height: calc(var(--unit) * 6);
+  margin-right: calc(var(--unit) * 2);
+  border-radius: calc(var(--unit) / 2);
+  background-color: var(--light);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  flex-shrink: 0;
+}
